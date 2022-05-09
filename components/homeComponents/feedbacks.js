@@ -1,13 +1,13 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper";
-import React, { useContext, useEffect, useState } from "react";
-import axios from "axios";
-
 import "swiper/css";
+import axios from "axios";
 import "swiper/css/pagination";
-import Qoshtirnoq from "../../images/qoshtirnoq.png"
-import { AuthContext } from "../../utils/authContext";
+import Image from 'next/image';
+import { Pagination, Autoplay } from "swiper";
 import FeedbackCard from "../card/feedbackCard";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Qoshtirnoq from "../../images/qoshtirnoq.png";
+import { AuthContext } from "../../utils/authContext";
+import React, { useContext, useEffect, useState } from "react";
 
 function FeedbackBox() {
     const { BASE_URL } = useContext(AuthContext);
@@ -28,7 +28,7 @@ function FeedbackBox() {
         <div className="bg-bgblack">
             <div className="container">
                 <div className="relative max-w-830 py-40 md:py-60 lg:py-80 px-20 md:px-44 lg:px-64 my-0 mx-auto">
-                    <img className="absolute left-0 top-245" src={Qoshtirnoq} alt="" />
+                    <Image className="absolute left-0 top-245" src={Qoshtirnoq} alt="" />
                     <Swiper
                         spaceBetween={30}
                         autoplay={{

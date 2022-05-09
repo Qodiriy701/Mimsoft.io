@@ -3,12 +3,13 @@ import Link from "next/link";
 import Image from 'next/image'
 import LogoD from "../../images/logoL.png";
 import MobileMenu from './mabileMenu';
-// import { useTranslation } from 'react-i18next';
+import { t } from 'i18next';
+import { useTranslation } from 'react-i18next';
 
 
 
 const Header = () => {
-    // const { t } = useTranslation();
+    const { t } = useTranslation();
     const [isMobileMenu, setIsMobileMenu] = useState(false);
     // const [localLang, setLocalLang] = useState(localStorage.getItem('lang'));
 
@@ -23,11 +24,11 @@ const Header = () => {
                     <div className="flex justify-between items-center md:space-x-10">
                         <div className="flex items-center">
                             <Logo />
-                            <NavLinks/>
+                            <NavLinks />
                         </div>
                         <div className="flex items-center text-white space-x-20">
-                            <a href="tel:+998970001551" className="text-base text-white hidden md:inline-block">(97) 000-15-51</a>
-                            <a href="#connect-box" className="font-medium text-base text-white py-13 px-30 bg-buttonbg rounded-7px hidden md:block">contact</a>
+                            {/* <a href="tel:+998970001551" className="text-base text-white hidden md:inline-block">+998 (97) 000-15-51</a> */}
+                            <a href="#contact" className="font-medium text-base text-white py-13 px-30 bg-buttonbg rounded-7px hidden md:block">{t('contact')}</a>
                             <button
                                 onClick={openMobileMenu}
                                 type="button"
@@ -57,7 +58,6 @@ export function Logo() {
                     <div className="w-44 h-44 flex items-center justify-center">
                         <Image className="" src={LogoD} alt="logo" />
                     </div>
-                    {/* <p className="font-medium text-xl text-white">mimsoft</p> */}
                 </a>
             </Link>
         </div>
@@ -68,13 +68,16 @@ const NavLinks = () => {
     return (
         <nav className="hidden lg:flex gap-x-40">
             <Link href={"/services"}>
-                <a className="text-lg text-white active:text-buttonbg">services</a>
+                <a className="text-lg text-white active:text-buttonbg">{t('services')}</a>
             </Link>
             <Link href={"/portfolio"}>
-                <a className="text-lg text-white active:text-buttonbg">portfolio</a>
+                <a className="text-lg text-white active:text-buttonbg">{t('portfolio')}</a>
             </Link>
             <Link href={"/about"}>
-                <a className="text-lg text-white active:text-buttonbg">about</a>
+                <a className="text-lg text-white active:text-buttonbg">{t('about')}</a>
+            </Link>
+            <Link href={"/contact"}>
+                <a className="text-lg text-white active:text-buttonbg">{t('contacts')}</a>
             </Link>
 
         </nav>

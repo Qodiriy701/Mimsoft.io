@@ -1,9 +1,9 @@
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import Link from "next/link";
 import { Logo } from "./header";
 
 const MobileMenu = ({ setIsMobileMenu }) => {
-    // const { t } = useTranslation();
+    const { t } = useTranslation();
     const closeMobileMenu = () => {
         setIsMobileMenu(false);
     };
@@ -26,15 +26,15 @@ const MobileMenu = ({ setIsMobileMenu }) => {
                     </div>
                     <div className="mt-16">
                         <nav className="flex flex-col text-center space-y-20">
-                            <a href="tel:+998970001551" className="text-base text-white my-20">(97) 000-15-51</a>
+                            <a href="tel:+998970001551" className="text-base text-white my-20">+998 (97) 000-15-51</a>
                             <Link href={"/services"}>
-                                <a className="text-white text-lg">services</a>
+                                <a className="text-white text-lg">{t('services')}</a>
                             </Link>
                             <Link href={"/portfolio"}>
-                                <a className="text-white text-lg">portfolio</a>
+                                <a className="text-white text-lg">{t('portfolio')}</a>
                             </Link>
                             <Link href={"/about"}>
-                                <a className="text-white text-lg">about</a>
+                                <a className="text-white text-lg">{t('about')}</a>
                             </Link>
                         </nav>
                     </div>

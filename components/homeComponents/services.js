@@ -4,10 +4,10 @@ import React, { useState, useEffect, useContext } from 'react';
 import { AuthContext } from '../../utils/authContext';
 import ServicesCard from "../card/servicesCard";
 import Arrow from "../layout/arrow";
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 function Services() {
-    // const { t } = useTranslation();
+    const { t } = useTranslation();
     const { BASE_URL } = useContext(AuthContext);
 
     const [data, setData] = useState([]);
@@ -29,7 +29,7 @@ function Services() {
             <div className="bg-bggray py-40 md:py-60 lg:py-80">
                 <div className="container space-y-20">
                     <div className="flex justify-between items-center">
-                        <p className="text-xxl text-white wolkway">services</p>
+                        <p className="text-xxl text-white wolkway">{t('services')}</p>
                         <Link href={"/services"}>
                             <a className="hidden md:block"><Arrow /></a>
                         </Link>

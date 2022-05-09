@@ -1,7 +1,5 @@
 import axios from "axios";
 import React, { useContext, useEffect, useState } from "react";
-// import PortfolioCard from "../../components/card/portfolioCard";
-
 import { FreeMode, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -10,12 +8,12 @@ import "swiper/css/free-mode";
 import "swiper/css/scrollbar";
 import { AuthContext } from "../../utils/authContext";
 import Arrow from "../layout/arrow";
-import Link from 'next/link'
+import Link from 'next/link';
 import PortfolioCard from "../card/portfolioCard";
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 function MainPortfolio() {
-    // const { t } = useTranslation();
+    const { t } = useTranslation();
     const { BASE_URL } = useContext(AuthContext);
     const [data, setData] = useState([]);
 
@@ -36,7 +34,7 @@ function MainPortfolio() {
             <div className="py-40 md:py-60 lg:py-80 bg-bggray">
                 <div className="container">
                     <div className="flex justify-between items-center mb-20">
-                        <p className="text-xxl text-white wolkway">Portfolio</p>
+                        <p className="text-xxl text-white wolkway">{t('Portfolio')}</p>
                         <Link href={"/portfolio"}>
                             <a className="hidden md:block"><Arrow /></a>
                         </Link>
@@ -61,7 +59,7 @@ function MainPortfolio() {
 
                         data-aos="fade-left"
                         data-aos-duration="500"
-                        data-aos-easing="ease-out"
+                        data-aos-easing="ease-in"
                         data-aos-mirror="true"
                         data-aos-once="true"
                     >

@@ -1,0 +1,253 @@
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../images/arrowDown.png);
+    transform: rotate(-180deg);
+}
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    margin-left: auto;
+    content: "";
+    background-image: url(../images/arrowDown.png);
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    transition: transform .2s ease-in-out;
+}
+
+.accordion-button:focus {
+    outline: none;
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+}
+
+.gaap-20 {
+    gap: 20px;
+}
+
+.gaap-40 {
+    gap: 40px;
+}
+
+.gradient-card {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%);
+    backdrop-filter: blur(15px);
+}
+
+.input-check {
+    color: red !important;
+}
+
+
+.react-tabs__tab {
+    display: block;
+    position: relative;
+    list-style: none;
+    padding: 0 20px;
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.react-tabs__tab--selected {
+    background: #1268FB;
+    padding: 20px;
+    color: white;
+    border-radius: 7px 0 0 7px;
+    outline: none;
+    border: none;
+}
+
+
+
+.before {
+    position: relative;
+}
+
+.before-anchor {
+    position: absolute;
+    top: -91px;
+    left: 0;
+}
+
+.tabs0 {
+    display: block;
+}
+
+.connect-messege {
+    z-index: 30;
+    position: fixed;
+    font-size: 20px;
+    bottom: 10%;
+    right: 5%;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 7px;
+    background-color: #18B15E;
+    -webkit-box-shadow: 0px 5px 11px 4px rgba(189, 189, 189, 0.22);
+    -moz-box-shadow: 0px 5px 11px 4px rgba(189, 189, 189, 0.22);
+    box-shadow: 0px 5px 11px 4px rgba(189, 189, 189, 0.22);
+}
+
+.error-messege {
+    z-index: 30;
+    position: fixed;
+    font-size: 20px;
+    bottom: 10%;
+    right: 10%;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 7px;
+    background-color: #D11F1F;
+    -webkit-box-shadow: 0px 5px 11px 4px rgba(238, 63, 63, 0.22);
+    -moz-box-shadow: 0px 5px 11px 4px rgba(238, 63, 63, 0.22);
+    box-shadow: 0px 5px 11px 4px rgba(238, 63, 63, 0.22);
+}
+
+
+
+.MuiAccordion-root {
+    background-color: #14161A !important;
+    border: none !important;
+    padding: 10px 25px !important;
+}
+
+
+.bg-filter {
+    filter: blur(10px);
+    -webkit-filter: blur(1px);
+}
+
+#head-main {
+    height: calc(100% - 55px);
+}
+
+
+
+#evaBg1 {
+    background: url(../images/evaBg1.svg) no-repeat top center;
+    background-size: cover;
+}
+
+#evaBg2 {
+    background: url(../images/evaBg2.svg) no-repeat top center;
+    background-size: cover;
+}
+
+.tabcontent {
+    display: none;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.tabBorder {
+    border-bottom: 2px solid blue;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .MuiAccordion-root {
+        background-color: #14161A !important;
+        border: none !important;
+        padding: 8px 20px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .react-tabs__tab--selected {
+        background: #1268FB;
+        padding: 20px;
+        color: white;
+        border-radius: 7px;
+        outline: none;
+        border: none;
+    }
+
+    .react-tabs__tab--selected2 {
+        padding: 20px;
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 0px;
+        border-bottom: 2px solid transparent;
+        background-color: transparent;
+    }
+
+    .react-tabs__tab--selected2:focus {
+        /* padding: 20px; */
+        color: white;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid blue;
+    }
+
+    .MuiAccordion-root {
+        background-color: #14161A !important;
+        border: none !important;
+        padding: 5px 13px !important;
+    }
+
+    .connect-messege {
+        z-index: 30;
+        position: fixed;
+        font-size: 14px;
+        bottom: 7%;
+        right: 2%;
+        left: 2%;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: #18B15E;
+        -webkit-box-shadow: 0px 5px 11px 4px rgba(189, 189, 189, 0.22);
+        -moz-box-shadow: 0px 5px 11px 4px rgba(189, 189, 189, 0.22);
+        box-shadow: 0px 5px 11px 4px rgba(189, 189, 189, 0.22);
+        /* background-image: linear-gradient(rgb(160, 255, 255) 10%, rgb(106, 255, 106) 85%, rgb(160, 255, 255) 90%); */
+    }
+
+    .error-messege {
+        z-index: 30;
+        position: fixed;
+        font-size: 14px;
+        bottom: 7%;
+        right: 2%;
+        left: 2%;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: #D11F1F;
+        -webkit-box-shadow: 0px 5px 11px 4px rgba(238, 63, 63, 0.22);
+        -moz-box-shadow: 0px 5px 11px 4px rgba(238, 63, 63, 0.22);
+        box-shadow: 0px 5px 11px 4px rgba(238, 63, 63, 0.22);
+        /* background-image: linear-gradient(rgb(160, 255, 255) 10%, rgb(106, 255, 106) 85%, rgb(160, 255, 255) 90%); */
+    }
+
+}
