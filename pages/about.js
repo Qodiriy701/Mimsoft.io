@@ -16,7 +16,7 @@ function AboutUsPage() {
             <Head>
                 <title>Mimsoft</title>
                 <link rel="icon" href="/favicon.ico" />
-                <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"></link>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
             </Head>
 
             <Layout>

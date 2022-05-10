@@ -4,7 +4,7 @@ import en from './en.json';
 import uz from './uz.json'
 
 i18n.use(initReactI18next).init({
-  lng: 'uz',
+  lng: 'eng',
   resources: {
     eng: {
       translation: en,

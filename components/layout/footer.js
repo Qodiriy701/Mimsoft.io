@@ -25,7 +25,7 @@ function Footer() {
             .catch(function (error) {
                 console.log(error);
             });
-    }, []);
+    }, [BASE_URL]);
 
     const clickTop = () => {
         window.scrollTo(0, 0);
@@ -43,7 +43,7 @@ function Footer() {
                         {data.length > 0 &&
                             data.map((question) => {
                                 return (
-                                    <a key={question.id} className="w-28 h-28" href={`${question.url}`} target='_blank'>
+                                    <a key={question.id} className="w-28 h-28" href={`${question.url}`}>
                                         <Image src={`${BASE_IMG}${question.icon}`} width={28} height={28} alt="" />
                                     </a>
                                 )

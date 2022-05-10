@@ -22,7 +22,7 @@ function FeedbackBox() {
             .catch(function (error) {
                 console.log(error);
             });
-    }, []);
+    }, [BASE_URL]);
 
     return (
         <div className="bg-bgblack">

@@ -21,30 +21,50 @@ function ConnectBox() {
 
     // const [selectValue, setSelectValue] = useState('');  //
     const [data, setData] = useState([]);
+    const [checkbox, setCheckbox] = useState('');
+    const [security, setSecurity] = useState('');
 
-    let checkbox, security;
-    let tabPanel1, tabPanel2;
-    let nextButton, submitButton;
-    let tab1, tab2;
-    let nameInp, phoneInp;
-    let emailInp, companyInp;
+    const [tabPanel1, setTabPanel1] = useState('');
+    const [tabPanel2, setTabPanel2] = useState('');
+
+    const [nextButton, setNextButton] = useState('');
+    const [submitButton, setSubmitButton] = useState('');
+
+    const [tab1, setTab1] = useState('');
+    const [tab2, setTab2] = useState('');
+
+    const [nameInp, setNameInp] = useState('');
+    const [phoneInp, setPhoneInp] = useState('');
+
+    const [emailInp, setEmailInp] = useState('');
+    const [companyInp, setCompanyInp] = useState('');
+
+    // let checkbox, security;
+    // let tabPanel1, tabPanel2;
+    // let nextButton, submitButton;
+    // let tab1, tab2;
+    // let nameInp, phoneInp;
+    // let emailInp, companyInp;
 
     useEffect(() => {
-        checkbox = document.getElementById('checkbox');
-        security = document.getElementById('security');
+        setCheckbox(document.getElementById('checkbox'));
+        setSecurity(document.getElementById('security'));
 
-        tabPanel1 = document.querySelector('#tabPanel1');
-        tabPanel2 = document.querySelector('#tabPanel2');
-        nextButton = document.querySelector('#nextButton');
-        submitButton = document.querySelector('#connect');
-        tab1 = document.querySelector('#tab1')
-        tab2 = document.querySelector('#tab2')
+        setTabPanel1(document.querySelector('#tabPanel1'));
+        setTabPanel2(document.querySelector('#tabPanel2'));
 
-        nameInp = document.getElementById('name');
-        phoneInp = document.getElementById('phone');
-        emailInp = document.getElementById('email');
-        companyInp = document.getElementById('company');
-    })
+        setNextButton(document.querySelector('#nextButton'));
+        setSubmitButton(document.querySelector('#connect'));
+
+        setTab1(document.querySelector('#tab1'));
+        setTab2(document.querySelector('#tab2'));
+
+        setNameInp(document.getElementById('name'));
+        setPhoneInp(document.getElementById('phone'));
+
+        setEmailInp(document.getElementById('email'));
+        setCompanyInp(document.getElementById('company'));
+    }, [setCheckbox])
 
 
     useEffect(() => {
@@ -56,7 +76,7 @@ function ConnectBox() {
             .catch(function (error) {
                 console.log(error);
             });
-    }, [])
+    }, [BASE_URL])
 
     const ref = useRef(null);
 
@@ -162,7 +182,6 @@ function ConnectBox() {
                     nda: checkbox.checked === true ? 1 : 0
                 })
                 .then((response) => {
-                    console.log(response);
                     const message = document.createElement('p');
                     message.classList.add('connect-messege');
                     message.innerText = t('message');

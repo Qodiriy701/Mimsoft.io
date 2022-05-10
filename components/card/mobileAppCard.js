@@ -14,7 +14,7 @@ function MobileAppCard({ question }) {
             className="relative w-full rounded-7px border max-h-222 min-h-235 md:max-h-254 border-white overflow-hidden bg-bggray">
             <Image src={`${BASE_IMG}${question.image}`} layout='fill' objectFit='cover' alt="" />
             <div className="bg-bgblack absolute bottom-20 left-20 right-40 p-10 md:p-16 lg:p-20 rounded-7px flex justify-between items-center">
-                <p className="text-white text-base">{question.name[i18n.language]}</p>
+                <h2 className="text-white text-base">{question.name[i18n.language]}</h2>
                 <Image src={arrowImg} alt="" />
             </div>
         </div>

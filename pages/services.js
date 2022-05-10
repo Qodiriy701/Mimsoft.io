@@ -35,7 +35,7 @@ function ServicesPage() {
             setTabIndex(+currentTab)
         }
 
-    }, []);
+    }, [BASE_URL]);
 
     const onChangeClick = (index) => {
         setTabIndex(index)
@@ -66,7 +66,7 @@ function ServicesPage() {
                                         {
                                             data.map((question) => {
                                                 return (
-                                                    <Tab key={question.id} className="p-16 text-white text-base font-medium">{question.title[i18n.language]}</Tab>
+                                                    <Tab key={question.id} className="p-16 text-white text-base font-medium"><h1 className="cursor-pointer">{question.title[i18n.language]}</h1></Tab>
                                                 )
                                             })
                                         }

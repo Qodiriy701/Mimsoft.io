@@ -17,7 +17,7 @@ function PortfolioBox() {
             .catch(function (error) {
                 console.log(error);
             });
-    }, []);
+    }, [BASE_URL]);
 
 
     return (

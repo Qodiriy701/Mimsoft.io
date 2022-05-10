@@ -14,14 +14,14 @@ function MainSection() {
                     <div className="col-span-5 flex flex-col justify-between">
                         <div className="flex-auto flex items-center">
                             <div className="">
-                                <p id="about" className="text-xxl md:text-xxxl lg:text-v mb-10 text-white wolkway">{t('slogan')}</p>
-                                <p className="max-w-350 text-base text-white mb-40 md:m-0 leading-7" dangerouslySetInnerHTML={{ __html: t('solution') }}></p>
+                                <h1 id="about" className="text-xxl md:text-xxxl lg:text-v mb-10 text-white wolkway">{t('slogan')}</h1>
+                                <h3 className="max-w-350 text-base text-white mb-40 md:m-0 leading-7" dangerouslySetInnerHTML={{ __html: t('solution') }}></h3>
                             </div>
                         </div>
                     </div>
                     <div className="flex items-center justify-center col-span-3 overflow-hidden pt-20">
                         <div className="md:relative pt-10 scale-110">
-                            <Image className="md:scale-110" src={mainImg} />
+                            <Image className="md:scale-110" src={mainImg} alt="" />
                         </div>
                     </div>
                 </div>

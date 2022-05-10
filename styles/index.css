@@ -141,10 +141,8 @@
 
 .tabcontent {
     display: none;
-    -webkit-animation: fadeEffect 1s;
-    animation: fadeEffect 1s;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
+    -webkit-animation: fadeEffect 0.37s;
+    animation: fadeEffect 0.37s;
 }
 
 .tabBorder {
@@ -152,23 +150,13 @@
 }
 
 @-webkit-keyframes fadeEffect {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 @keyframes fadeEffect {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 
@@ -190,24 +178,6 @@
         border-radius: 7px;
         outline: none;
         border: none;
-    }
-
-    .react-tabs__tab--selected2 {
-        padding: 20px;
-        color: white;
-        outline: none;
-        border: none;
-        border-radius: 0px;
-        border-bottom: 2px solid transparent;
-        background-color: transparent;
-    }
-
-    .react-tabs__tab--selected2:focus {
-        /* padding: 20px; */
-        color: white;
-        outline: none;
-        border: none;
-        border-bottom: 2px solid blue;
     }
 
     .MuiAccordion-root {

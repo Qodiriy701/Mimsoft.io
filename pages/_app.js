@@ -3,6 +3,7 @@ import axios from "axios";
 import Head from 'next/head';
 import '../styles/index.css';
 import '../styles/globals.css';
+import Script from 'next/script';
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next'
 // import { initializeApp } from "firebase/app";
@@ -55,10 +56,18 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <script type="application/ld+json">
+          {`
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://mimsoft.io",
+           "logo": "https://mimsoft.io/images/logo.png"
+        `}
+        </script>
+        {/* <link rel="preconnect" href="https://fonts.googleapis.com" /> */}
+        {/* <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> */}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </Head>
       <AuthProvider>
         <Component {...pageProps} />

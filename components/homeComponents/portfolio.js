@@ -26,7 +26,7 @@ function MainPortfolio() {
             .catch(function (error) {
                 console.log(error);
             });
-    }, []);
+    }, [BASE_URL]);
 
     return (
         <div className="before">
@@ -34,7 +34,7 @@ function MainPortfolio() {
             <div className="py-40 md:py-60 lg:py-80 bg-bggray">
                 <div className="container">
                     <div className="flex justify-between items-center mb-20">
-                        <p className="text-xxl text-white wolkway">{t('Portfolio')}</p>
+                        <h1 className="text-xxl text-white wolkway">{t('Portfolio')}</h1>
                         <Link href={"/portfolio"}>
                             <a className="hidden md:block"><Arrow /></a>
                         </Link>

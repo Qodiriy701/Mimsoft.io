@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 @import url('https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
 
 @font-face {
     font-family: 'wolkway';
     src: local('wolkwway'), url('../fonts/Walkway-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'fredoka';
+    src: local('fredoka'), url('../fonts/Fredoka/Fredoka-Regular.ttf') format('truetype');
 }
 
 
@@ -41,7 +45,7 @@ body.active {
 }
 
 body {
-    font-family: fredoka, poppins, sans-serif, ui-sans-serif, system-ui;
+    font-family: 'fredoka', poppins, sans-serif, ui-sans-serif, system-ui;
     scroll-behavior: smooth;
 }
 
@@ -64,4 +68,8 @@ ul {
 a {
     text-decoration: none;
     color: #fff;
+}
+
+h1, h2, h3 {
+    font-family: 'fredoka';
 }

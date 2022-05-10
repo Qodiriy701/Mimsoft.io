@@ -6,13 +6,12 @@ import Contacts from '../components/contactComponents/contacts';
 
 function Contact() {
     const { t } = useTranslation();
-    return(
+    return (
         <div>
             <Head>
                 <title>Mimsoft</title>
                 <link rel="icon" href="/favicon.ico" />
-                <link rel="stylesheet" href="contact.css"></link>
-                <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"></link>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
             </Head>
 
             <Layout>
