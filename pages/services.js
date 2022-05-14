@@ -50,6 +50,30 @@ function ServicesPage() {
                 <title>Mimsoft</title>
                 <link rel="icon" href="/favicon.ico" />
 
+                <meta property="type" content="website"/>
+                <meta property="og:type" content="website"/>
+
+                <meta property="author" content="Mimsoft"/>
+                <meta property="og:author" content="Mimsoft"/>
+
+                <meta property="site_name" content="mimsoft.io"/>
+                <meta property="og:site_name" content="mimsoft.io"/>
+
+                <meta property="url" content="https://mimsoft.io"/>
+                <meta property="og:url" content="https://mimsoft.io"/>
+
+                <meta property="image" content="%PUBLIC_URL%/logo192.png" />
+                <meta property="og:image" content="%PUBLIC_URL%/logo192.png" />
+
+                <meta property="title" content="Biznes muammolarga zamonaviy, qulay va kreativ yechimlar"/>
+                <meta property="og:title" content="Biznes muammolarga zamonaviy, qulay va kreativ yechimlar"/>
+
+                <meta property="keywords" content="mimsoft, Mimsoft, mimsoft io, best it company, IT, IT company, IT kompaniya, tashkent it company,"/>
+                <meta property="og:keywords" content="mimsoft, Mimsoft, mimsoft io, best it company, IT, IT company, IT kompaniya, tashkent it company,"/>
+
+                <meta property="description" content="Mimsoft - biznes muammolarga zamonaviy, qulay va kreativ yechim taklif qila oladigan ko'ptarmoqli IT kompaniya"/>
+                <meta property="og:description" content="Mimsoft - biznes muammolarga zamonaviy, qulay va kreativ yechim taklif qila oladigan ko'ptarmoqli IT kompaniya"/>
+
                 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
                 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />

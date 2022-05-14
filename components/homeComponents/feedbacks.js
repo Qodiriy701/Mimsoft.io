@@ -28,7 +28,9 @@ function FeedbackBox() {
         <div className="bg-bgblack">
             <div className="container">
                 <div className="relative max-w-830 py-40 md:py-60 lg:py-80 px-20 md:px-44 lg:px-64 my-0 mx-auto">
-                    <Image className="absolute left-0 top-245" src={Qoshtirnoq} alt="" />
+                    <div className="absolute left-0 top-245">
+                    <Image src={Qoshtirnoq} alt="" />
+                    </div>
                     <Swiper
                         spaceBetween={30}
                         autoplay={{

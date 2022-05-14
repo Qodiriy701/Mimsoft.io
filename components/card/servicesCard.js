@@ -18,7 +18,7 @@ function ServicesCard({ question, index }) {
         <Link href={`/services?tab=${index}`}>
             <a
                 data-aos="fade-up"
-                data-aos-offset="200"
+                data-aos-offset="100"
                 data-aos-duration="500"
                 data-aos-easing="ease-in"
                 data-aos-mirror="true"
