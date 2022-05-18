@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { useState } from "react";
-import ReactPlayer from 'react-player';
 import Mouse from "../../images/mouse.png";
 import playImg from "../../images/play.png";
 import { useTranslation } from "react-i18next";
