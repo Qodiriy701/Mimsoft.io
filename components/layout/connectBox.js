@@ -2,8 +2,7 @@ import axios from "axios";
 import { useRef } from 'react';
 import Image from "next/image";
 import { IMaskInput } from 'react-imask';
-import React, { useContext } from "react";
-import { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
 import { AuthContext } from "../../utils/authContext";
 
@@ -38,13 +37,6 @@ function ConnectBox() {
 
     const [emailInp, setEmailInp] = useState('');
     const [companyInp, setCompanyInp] = useState('');
-
-    // let checkbox, security;
-    // let tabPanel1, tabPanel2;
-    // let nextButton, submitButton;
-    // let tab1, tab2;
-    // let nameInp, phoneInp;
-    // let emailInp, companyInp;
 
     useEffect(() => {
         setCheckbox(document.getElementById('checkbox'));
