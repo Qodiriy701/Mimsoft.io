@@ -50,8 +50,8 @@ function MainSection() {
             </div>
             {active &&
                 <div className={`fixed top-0 h-screen w-full overflow-hidden z-30 ${styles.videBox}`}>
-                    <svg xmlns="http://www.w3.org/2000/svg" onClick={closeFunction} class="h-40 w-40 text-white absolute top-5 right-5 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    <svg xmlns="http://www.w3.org/2000/svg" onClick={closeFunction} className="h-40 w-40 text-white absolute top-5 right-5 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                     <div className="w-full h-full flex items-center justify-center">
                         <div className="w-full md:w-90% lg:w-70% h-auto lg:h-80%">

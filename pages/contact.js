@@ -21,8 +21,8 @@ function Contact() {
                 <meta property="site_name" content="mimsoft.io"/>
                 <meta property="og:site_name" content="mimsoft.io"/>
 
-                <meta property="url" content="https://mimsoft.io"/>
-                <meta property="og:url" content="https://mimsoft.io"/>
+                <meta property="url" content="https://mimsoft.io/contact"/>
+                <meta property="og:url" content="https://mimsoft.io/contact"/>
                 
                 <meta property="image" content="%PUBLIC_URL%/logo192.png" />
                 <meta property="og:image" content="%PUBLIC_URL%/logo192.png" />

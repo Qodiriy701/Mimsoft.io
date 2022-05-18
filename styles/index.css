@@ -41,6 +41,10 @@
     color: red !important;
 }
 
+.Black {
+    background-color: #14161A !important;
+}
+
 
 .react-tabs__tab {
     display: block;

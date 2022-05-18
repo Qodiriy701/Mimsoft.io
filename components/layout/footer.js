@@ -43,7 +43,7 @@ function Footer() {
                         {data.length > 0 &&
                             data.map((question) => {
                                 return (
-                                    <a key={question.id} className="w-28 h-28" href={`${question.url}`}>
+                                    <a key={question.id} className="w-28 h-28" href={`${question.url}`} target="_blank" rel="noopener noreferrer">
                                         <Image src={`${BASE_IMG}${question.icon}`} width={28} height={28} alt="" />
                                     </a>
                                 )

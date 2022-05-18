@@ -32,7 +32,7 @@ function QuestionBox() {
                 <div className="container">
                     <p className="text-xxl leading-9 mb-20 text-white wolkway bgred">{t('questions')}</p>
                     <div className="grid mt-20 grid-cols-1 rounded-7px overflow-hidden gap-y-2">
-                        <div className="accordion accordion-flush space-y-2" id="accordionFlushExample">
+                        <div className="accordion accordion-flush space-y-2 bg-transparent" id="accordionFlushExample">
                             {data.length > 0 &&
                                 data.map((question, index) => {
                                     return (

@@ -1,4 +1,5 @@
 import axios from "axios";
+import Link from "next/link";
 import { useRef } from 'react';
 import Image from "next/image";
 import { IMaskInput } from 'react-imask';
@@ -353,7 +354,7 @@ function ConnectBox() {
                                             id='security' type="checkbox"
                                             className="w-20 h-20 outline-none"
                                         />
-                                        <p className="text-white text-sm md:text-base"><a href="http://mimsoft.io/privacy" className="underline underline-offset-1">{t('privacy')}</a> {t('phoneSecurity')}</p>
+                                        <p className="text-white text-sm md:text-base"><Link href="/privacy"><a className="underline underline-offset-1"target="_blank" rel="noopener noreferrer">{t('privacy')}</a></Link> {t('phoneSecurity')}</p>
                                     </div>
 
                                     <div>
