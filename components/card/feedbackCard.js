@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/image';
 import { useContext } from "react";
 import { useTranslation } from "react-i18next";
 import { AuthContext } from "../../utils/authContext";

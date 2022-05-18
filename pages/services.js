@@ -38,9 +38,10 @@ function ServicesPage() {
     }, [BASE_URL]);
 
     const onChangeClick = (index) => {
+        console.log(index);
         setTabIndex(index)
         const url = new URL(window.location)
-        url.searchParams.set('tab', index)
+        url.searchParams.set('tab', data.slug)
         window.history.pushState(null, document.title, url);
     }
 
@@ -85,7 +86,7 @@ function ServicesPage() {
                     <div className="bg-bggray pt-20 md:pt-30 lg:pt-40 pb-40 md:pb-60 lg:pb-80">
                         <div className="container">
                             {data.length ?
-                                <Tabs className="flex flex-col md:flex-row gap-y-30" selectedIndex={tabIndex} onSelect={index => onChangeClick(index)}>
+                                <Tabs className="flex flex-col md:flex-row gap-y-30" selectedIndex={data.slug} onSelect={index => onChangeClick(data.slug)}>
                                     <TabList className="w-full md:w-270 flex flex-col md:shrink-0">
                                         {
                                             data.map((question) => {
