@@ -37,9 +37,6 @@ function Portfolio() {
                 <meta property="description" content="Mimsoft - biznes muammolarga zamonaviy, qulay va kreativ yechim taklif qila oladigan ko'ptarmoqli IT kompaniya" />
                 <meta property="og:description" content="Mimsoft - biznes muammolarga zamonaviy, qulay va kreativ yechim taklif qila oladigan ko'ptarmoqli IT kompaniya" />
 
-                {/* <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-                <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> */}
             </Head>
 
             <Layout>

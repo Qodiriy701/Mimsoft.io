@@ -17,7 +17,7 @@ function ServicesPage() {
     const { BASE_IMG } = useContext(AuthContext);
 
     const [data, setData] = useState('');
-    const [tabIndex, setTabIndex] = useState(0)
+    const [tabIndex, setTabIndex] = useState('')
 
     useEffect(() => {
         axios
@@ -38,10 +38,9 @@ function ServicesPage() {
     }, [BASE_URL]);
 
     const onChangeClick = (index) => {
-        console.log(index);
         setTabIndex(index)
         const url = new URL(window.location)
-        url.searchParams.set('tab', data.slug)
+        url.searchParams.set('tab', index)
         window.history.pushState(null, document.title, url);
     }
 
@@ -74,10 +73,7 @@ function ServicesPage() {
 
                 <meta property="description" content="Mimsoft - biznes muammolarga zamonaviy, qulay va kreativ yechim taklif qila oladigan ko'ptarmoqli IT kompaniya"/>
                 <meta property="og:description" content="Mimsoft - biznes muammolarga zamonaviy, qulay va kreativ yechim taklif qila oladigan ko'ptarmoqli IT kompaniya"/>
-
-                {/* <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> */}
-                {/* <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" /> */}
-                {/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> */}
+                
             </Head>
             <div className="flex flex-col min-h-screen">
                 <Header />
@@ -86,12 +82,12 @@ function ServicesPage() {
                     <div className="bg-bggray pt-20 md:pt-30 lg:pt-40 pb-40 md:pb-60 lg:pb-80">
                         <div className="container">
                             {data.length ?
-                                <Tabs className="flex flex-col md:flex-row gap-y-30" selectedIndex={data.slug} onSelect={index => onChangeClick(data.slug)}>
+                                <Tabs className="flex flex-col md:flex-row gap-y-30" selectedIndex={data.slug} onSelect={index => onChangeClick(data[index].slug)}>
                                     <TabList className="w-full md:w-270 flex flex-col md:shrink-0">
                                         {
                                             data.map((question) => {
                                                 return (
-                                                    <Tab key={question.id} className="p-16 text-white text-base font-medium"><h1 className="cursor-pointer">{question.title[i18n.language]}</h1></Tab>
+                                                    <Tab key={question.id} className="p-16 text-white text-base font-medium"><p className="cursor-pointer">{question.title[i18n.language]}</p></Tab>
                                                 )
                                             })
                                         }

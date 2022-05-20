@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import React, { useContext } from "react";
 import { useEffect, useState } from "react";
 import mail from '../../images/conMail.png';
 import phone from '../../images/conPhone.png';
@@ -13,8 +12,6 @@ function Contacts() {
     const [tab2, setTab2] = useState('');
     const [tab1Content, setTab1Content] = useState('');
     const [tab2Content, setTab2Content] = useState('');
-    // let tab1, tab2;
-    // let tab1Content, tab2Content;
 
     useEffect(() => {
         setTab1(document.querySelector('#tab1'));
@@ -94,6 +91,7 @@ function Contacts() {
                             </div>
                         </div>
                     </div>
+
 
                     <div id="tab2Content" className='tabcontent text-white'>
                         <div className='space-y-40'>

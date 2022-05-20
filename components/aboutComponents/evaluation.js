@@ -8,7 +8,7 @@ function Evaluation() {
             <div className="container">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
                     <div className="text-white p-40 md:p-60 lg:p-80 flex flex-col justify-center border" id="evaBg1">
-                        <h1 className="text-xxl tracking-wider leading-8 mb-10">Jamoamiz bilan tanish bo‘lsangiz bizni baholash imkoniga egasiz!</h1>
+                        <p className="text-xxl tracking-wider leading-8 mb-10">Jamoamiz bilan tanish bo‘lsangiz bizni baholash imkoniga egasiz!</p>
                         <p className="text-placeholderColor md:w-60% leading-5 mb-85">Quyidagi saytlarda mimsoft o’z profiliga ega!</p>
                         <div className="grid grid-cols-2 gap-20">
                             <a href="" className="flex items-center space-x-10">
@@ -18,7 +18,7 @@ function Evaluation() {
                         </div>
                     </div>
                     <div className="text-white p-40 md:p-60 lg:p-80 flex flex-col justify-center border" id="evaBg2">
-                        <h1 className="text-xxl tracking-wider leading-8 mb-10">Mimsoftning ijtimoiy tarmoqlardagi sahifalari</h1>
+                        <p className="text-xxl tracking-wider leading-8 mb-10">Mimsoftning ijtimoiy tarmoqlardagi sahifalari</p>
                         <p className="text-placeholderColor md:w-80% leading-5 mb-40">Doimiy yangiliklardan xabardor bo‘lib turish uchun obuna bo‘ling</p>
                         <div className="grid grid-cols-2 gap-20">
                             <a href="" className="flex items-center space-x-10">

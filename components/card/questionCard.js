@@ -7,12 +7,12 @@ function QuestionCard({ question, index }) {
     return (
         <div className="accordion-item bg-bgblack text-white Black">
             <div className="accordion-header text-white" id={`flush-heading${index}`}>
-                <h1 className="accordion-button collapsed text-white text-xl font-medium" type="button" data-bs-toggle="collapse" data-bs-target={`#flush-collapse${index}`} aria-expanded="false" aria-controls={`flush-collapse${index}`}>
+                <p className="accordion-button collapsed text-white text-xl font-medium" type="button" data-bs-toggle="collapse" data-bs-target={`#flush-collapse${index}`} aria-expanded="false" aria-controls={`flush-collapse${index}`}>
                     {question.title[i18n.language]}
-                </h1>
+                </p>
             </div>
             <div id={`flush-collapse${index}`} className="accordion-collapse collapse" aria-labelledby={`flush-heading${index}`} data-bs-parent="#accordionFlushExample">
-                <div className="accordion-body text-placeholderColor text-base" dangerouslySetInnerHTML={{ __html: question.body[i18n.language] }}></div>
+                <p className="accordion-body text-placeholderColor text-base" dangerouslySetInnerHTML={{ __html: question.body[i18n.language] }}></p>
             </div>
         </div>
     );

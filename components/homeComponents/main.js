@@ -16,7 +16,6 @@ function MainSection() {
 
     const openFunction = () => {
         setActive(true)
-        console.log("True");
     }
 
     return (

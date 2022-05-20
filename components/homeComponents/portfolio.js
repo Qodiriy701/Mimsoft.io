@@ -34,7 +34,7 @@ function MainPortfolio() {
             <div className="py-40 md:py-60 lg:py-80 bg-bggray">
                 <div className="container">
                     <div className="flex justify-between items-center mb-20">
-                        <h1 className="text-xxl text-white wolkway">{t('Portfolio')}</h1>
+                        <p className="text-xxl text-white wolkway">{t('Portfolio')}</p>
                         <Link href={"/portfolio"}>
                             <a className="hidden md:block"><Arrow /></a>
                         </Link>

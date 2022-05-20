@@ -29,7 +29,7 @@ function Services() {
             <div className="bg-bggray py-40 md:py-60 lg:py-80">
                 <div className="container space-y-20">
                     <div className="flex justify-between items-center">
-                        <h1 className="text-xxl text-white wolkway">{t('services')}</h1>
+                        <p className="text-xxl text-white wolkway">{t('services')}</p>
                         <Link href={"/services"}>
                             <a className="hidden md:block"><Arrow /></a>
                         </Link>

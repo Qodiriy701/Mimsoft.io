@@ -31,7 +31,7 @@ function ServicesCard({ question, index }) {
                     <div className="w-72 h-72 shrink-0 rounded-7px overflow-hidden bg-bggray flex items-center justify-center relative">
                         <Image className="max-w-72 max-h-72 object-cover" src={`${BASE_IMG}${question.image}`} width={32} height={32} alt="" />
                     </div>
-                    <h1 className="font-semibold text-xl flex items-center text-white line-clamp-2 z-10">{question.title[i18n.language]}</h1>
+                    <p className="font-semibold text-xl flex items-center text-white line-clamp-2 z-10">{question.title[i18n.language]}</p>
                 </div>
                 <div className="flex flex-col gap-20">
                     <p className="text-base text-white line-clamp-2 h-50 overflow-hidden z-10">{question.body[i18n.language]}</p>
