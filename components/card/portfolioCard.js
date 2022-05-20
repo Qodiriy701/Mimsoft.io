@@ -15,7 +15,7 @@ function PortfolioCard({ question }) {
             className="w-full">
             <div className="relative pb-180 md:pb-205 lg:pb-210 w-full">
                 <div className="rounded-7px overflow-hidden w-full max-h-200 md:max-h-285 lg:max-h-370 min-h-180 md:min-h-270 lg:min-h-350 relative">
-                    <Image src={img} layout="fill" alt="" />
+                    <Image src={img} layout="fill" objectFit="cover" objectPosition={"top"} alt="" />
                 </div>
                 <div className="absolute bottom-0 w-85%">
                     <h2 className="font-medium text-xs md:text-sm py-6 md:py-8 lg:py-10 px-10 md:px-16 lg:px-20 inline-block rounded-t-7px text-white bg-buttonbg">{question.title[i18n.language]}</h2>

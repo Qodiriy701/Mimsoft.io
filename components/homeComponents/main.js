@@ -5,7 +5,6 @@ import playImg from "../../images/play.png";
 import { useTranslation } from "react-i18next";
 import mainImg from "../../images/mainImg.png";
 import styles from '../../styles/home.module.css';
-// import njn from "../../images/bmw.mp4"
 
 function MainSection() {
     const { t } = useTranslation();

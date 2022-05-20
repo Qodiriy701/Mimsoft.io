@@ -3,11 +3,13 @@ import Link from "next/link";
 import { useRef } from 'react';
 import Image from "next/image";
 import { IMaskInput } from 'react-imask';
-import React, { useContext, useEffect, useState } from "react";
+import tick from "../../images/tick.png";
+import 'react-phone-input-2/lib/style.css';
+import PhoneInput from 'react-phone-input-2';
 import { useTranslation } from 'react-i18next';
 import { AuthContext } from "../../utils/authContext";
+import React, { useContext, useEffect, useState } from "react";
 
-import tick from "../../images/tick.png"
 
 function ConnectBox() {
     const { t, i18n } = useTranslation();
@@ -19,7 +21,6 @@ function ConnectBox() {
     const [company, setCompany] = useState('');
     const [aboutProject, setAboutProject] = useState('');
 
-    // const [selectValue, setSelectValue] = useState('');  //
     const [data, setData] = useState([]);
     const [checkbox, setCheckbox] = useState('');
     const [security, setSecurity] = useState('');
@@ -98,36 +99,20 @@ function ConnectBox() {
         }
     }
 
-    function raqamTekshirish(element) {
-        // console.log(element);
-        element.classList.add('input-check')
-        setTimeout(() => {
-            element.classList.remove('input-check')
-        }, 1200)
-    }
-
     const NextButtonClick = (e) => {
         e.preventDefault();
 
         tekshirish(nameInp, name, t('Name'));
         tekshirish(emailInp, email, t('Email'));
 
-        if (phone.length === 0) {
-            tekshirish(phoneInp, phone, t('Num'));
-        }
-
-        if (phone.length < 12 && phone.length !== 0) {
-            raqamTekshirish(phoneInp);
-        }
-
-        if (name === '' || phone.length < 12 || email === '') {
+        if (name === '' || phone === '' || email === '') {
             nextButton.classList.add('animate__animated', 'animate__shakeX');
             setTimeout(() => {
                 nextButton.classList.remove('animate__animated', 'animate__shakeX');
             }, 1000)
         }
 
-        if (name !== '' && phone.length === 12 && email !== '') {
+        if (name !== '' && email !== '') {
 
             tab1.firstElementChild.classList.toggle('bg-buttonbg')
             tab1.firstElementChild.classList.toggle('bg-bggray')
@@ -221,7 +206,7 @@ function ConnectBox() {
             submitButton.classList.add('bg-bggray');
         }
     }
-    
+
     const checkSubmit = () => {
         if (security.checked) {
             submitButton.classList.remove('bg-bggray');
@@ -292,7 +277,7 @@ function ConnectBox() {
                                         placeholder={t('phoneName')}
                                     />
 
-                                    <IMaskInput
+                                    {/* <IMaskInput
                                         id='phone'
                                         value={phone}
                                         mask='+{998} (00) 000 00 00'
@@ -303,6 +288,17 @@ function ConnectBox() {
                                         }
                                         placeholder={t('phoneNum')}
                                         className="text-base outline-none text-placeholderColor py-10 md:py-16 lg:py-20 border-b-2 bg-transparent border-placeholderColor w-full"
+                                    /> */}
+
+                                    <PhoneInput
+                                        id='phone'
+                                        country={'us'}
+                                        value={phone}
+                                        inputStyle={{ backgroundColor: 'transparent', width: '100%', color: 'white', paddingTop: '30px', paddingBottom: '30px', border: 'none', fontSize: '16px', boxShadow: 'none' }}
+                                        buttonStyle={{ backgroundColor: 'transparent', border: 'none' }}
+                                        containerStyle={{ borderBottom: '2px solid #999999' }}
+                                        onChange={setPhone}
+                                        placeholder={t('phoneNum')}
                                     />
 
                                     <input
@@ -354,7 +350,7 @@ function ConnectBox() {
                                             id='security' type="checkbox"
                                             className="w-20 h-20 outline-none"
                                         />
-                                        <p className="text-white text-sm md:text-base"><Link href="/privacy"><a className="underline underline-offset-1"target="_blank" rel="noopener noreferrer">{t('privacy')}</a></Link> {t('phoneSecurity')}</p>
+                                        <p className="text-white text-sm md:text-base"><Link href="/privacy"><a className="underline underline-offset-1" target="_blank" rel="noopener noreferrer">{t('privacy')}</a></Link> {t('phoneSecurity')}</p>
                                     </div>
 
                                     <div>
