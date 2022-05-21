@@ -10,7 +10,6 @@ import FeedbackBox from '../components/homeComponents/feedbacks'
 import ConnectBox from '../components/layout/connectBox'
 import { useTranslation } from "react-i18next";
 import { t } from 'i18next'
-// import "@fancyapps/ui/dist/fancybox.css";
 import QuestionBox from '../components/homeComponents/question'
 
 export default function Home() {
