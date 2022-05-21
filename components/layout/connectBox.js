@@ -9,6 +9,7 @@ import PhoneInput from 'react-phone-input-2';
 import { useTranslation } from 'react-i18next';
 import { AuthContext } from "../../utils/authContext";
 import React, { useContext, useEffect, useState } from "react";
+import Script from "next/script";
 
 
 function ConnectBox() {
@@ -368,6 +369,11 @@ function ConnectBox() {
                     </div>
                 </div>
             </div>
+
+
+
+
+            <Script src="https://unpkg.com/react-phone-input-2@2.x/dist/lib.js"></Script>
         </div>
     );
 }
