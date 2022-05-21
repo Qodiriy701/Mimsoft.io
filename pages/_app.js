@@ -3,12 +3,8 @@ import '../i18n'
 import Head from 'next/head';
 import '../styles/index.css';
 import '../styles/globals.css';
-import Script from 'next/script';
-// import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next'
-// import { initializeApp } from "firebase/app";
 import AuthProvider from '../utils/authContext';
-// import { getAnalytics } from "firebase/analytics";
 
 
 function MyApp({ Component, pageProps }) {
