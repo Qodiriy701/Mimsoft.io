@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Script from 'next/script';
 import Layout from '../components/layout';
 import { useTranslation } from "react-i18next";
 import HomeBox from '../components/layout/homeBox';
@@ -53,6 +54,9 @@ function AboutUsPage() {
                 <Evaluation />
                 <ConnectBox />
             </Layout>
+
+
+            <Script src="https://unpkg.com/react-phone-input-2@2.x/dist/lib.js"></Script>
         </div>
     );
 }
