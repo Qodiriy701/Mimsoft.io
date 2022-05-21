@@ -1,5 +1,4 @@
 import '../i18n'
-// import axios from "axios";
 import Head from 'next/head';
 import '../styles/index.css';
 import '../styles/globals.css';
