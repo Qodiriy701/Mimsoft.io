@@ -3,7 +3,7 @@ import '../i18n'
 import Head from 'next/head';
 import '../styles/index.css';
 import '../styles/globals.css';
-// import Script from 'next/script';
+import Script from 'next/script';
 // import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next'
 // import { initializeApp } from "firebase/app";
@@ -72,9 +72,6 @@ function MyApp({ Component, pageProps }) {
       <AuthProvider>
         <Component {...pageProps} />
       </AuthProvider>
-
-
-      {/* <Script src="https://unpkg.com/react-phone-input-2@2.x/dist/lib.js"></Script> */}
     </>
   )
 }
