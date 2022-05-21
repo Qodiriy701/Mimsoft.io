@@ -2,11 +2,10 @@ import axios from "axios";
 import Link from "next/link";
 import { useRef } from 'react';
 import Image from "next/image";
-import Script from "next/script";
-// import { IMaskInput } from 'react-imask';
+import { IMaskInput } from 'react-imask';
 import tick from "../../images/tick.png";
-import 'react-phone-input-2/lib/style.css';
-import PhoneInput from 'react-phone-input-2';
+// import 'react-phone-input-2/lib/style.css';
+// import PhoneInput from 'react-phone-input-2';
 import { useTranslation } from 'react-i18next';
 import { AuthContext } from "../../utils/authContext";
 import React, { useContext, useEffect, useState } from "react";
@@ -278,7 +277,7 @@ function ConnectBox() {
                                         placeholder={t('phoneName')}
                                     />
 
-                                    {/* <IMaskInput
+                                    <IMaskInput
                                         id='phone'
                                         value={phone}
                                         mask='+{998} (00) 000 00 00'
@@ -289,9 +288,9 @@ function ConnectBox() {
                                         }
                                         placeholder={t('phoneNum')}
                                         className="text-base outline-none text-placeholderColor py-10 md:py-16 lg:py-20 border-b-2 bg-transparent border-placeholderColor w-full"
-                                    /> */}
+                                    />
 
-                                    <PhoneInput
+                                    {/* <PhoneInput
                                         id='phone'
                                         country={'us'}
                                         value={phone}
@@ -300,7 +299,7 @@ function ConnectBox() {
                                         containerStyle={{ borderBottom: '2px solid #999999' }}
                                         onChange={setPhone}
                                         placeholder={t('phoneNum')}
-                                    />
+                                    /> */}
 
                                     <input
                                         id="email" type="email"
@@ -373,7 +372,7 @@ function ConnectBox() {
 
 
 
-            <Script src="https://unpkg.com/react-phone-input-2@2.x/dist/lib.js"></Script>
+            {/* <Script src="https://unpkg.com/react-phone-input-2@2.x/dist/lib.js"></Script> */}
         </div>
     );
 }
