@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Script from "next/script";
 import 'remixicon/fonts/remixicon.css';
 import Layout from '../components/layout';
 import { useTranslation } from "react-i18next";
@@ -60,10 +59,6 @@ export default function Home() {
         <QuestionBox />
         <ConnectBox />
       </Layout>
-
-
-      
-      <Script src="https://unpkg.com/react-phone-input-2@2.x/dist/lib.js"></Script>
     </div>
   )
 }
