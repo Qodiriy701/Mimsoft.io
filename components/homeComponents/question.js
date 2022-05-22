@@ -1,10 +1,10 @@
 import axios from "axios";
-import Head from 'next/head'
-import React, { useContext, useEffect, useState } from "react";
+import Head from 'next/head';
+import Script from 'next/script';
 import { useTranslation } from "react-i18next";
-import { AuthContext } from "../../utils/authContext";
 import QuestionCard from "../card/questionCard";
-import Script from 'next/script'
+import { AuthContext } from "../../utils/authContext";
+import React, { useContext, useEffect, useState } from "react";
 
 
 function QuestionBox() {

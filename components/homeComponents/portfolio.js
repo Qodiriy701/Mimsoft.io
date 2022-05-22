@@ -1,16 +1,16 @@
-import axios from "axios";
-import React, { useContext, useEffect, useState } from "react";
-import { FreeMode, Scrollbar } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
+import axios from "axios";
+import Link from 'next/link';
 import "swiper/css/free-mode";
 import "swiper/css/scrollbar";
-import { AuthContext } from "../../utils/authContext";
 import Arrow from "../layout/arrow";
-import Link from 'next/link';
-import PortfolioCard from "../card/portfolioCard";
+import { FreeMode, Scrollbar } from "swiper";
 import { useTranslation } from "react-i18next";
+import PortfolioCard from "../card/portfolioCard";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { AuthContext } from "../../utils/authContext";
+import React, { useContext, useEffect, useState } from "react";
+
 
 function MainPortfolio() {
     const { t } = useTranslation();
@@ -32,7 +32,7 @@ function MainPortfolio() {
         <div className="before">
             <div className="before-anchor" id="portfolio"></div>
             <div className="py-40 md:py-60 lg:py-80 bg-bggray">
-                <div className="container">
+                <div className="container overflow-hidden">
                     <div className="flex justify-between items-center mb-20">
                         <p className="text-xxl text-white wolkway">{t('Portfolio')}</p>
                         <Link href={"/portfolio"}>
@@ -63,12 +63,14 @@ function MainPortfolio() {
                         data-aos-mirror="true"
                         data-aos-once="true"
                     >
-                        {data.length > 0 &&
-                            data.map((question, index) => {
-                                return (
-                                    <SwiperSlide key={index}><PortfolioCard key={index} question={question} /></SwiperSlide>
-                                )
-                            })}
+                        <div>
+                            {data.length > 0 &&
+                                data.map((question, index) => {
+                                    return (
+                                        <SwiperSlide key={index}><PortfolioCard key={index} question={question} /></SwiperSlide>
+                                    )
+                                })}
+                        </div>
                     </Swiper>
                 </div>
             </div>

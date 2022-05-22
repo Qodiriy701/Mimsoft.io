@@ -36,6 +36,10 @@ const MobileMenu = ({ setIsMobileMenu }) => {
                             <Link href={"/about"}>
                                 <a className="text-white text-lg">{t('about')}</a>
                             </Link>
+                            <Link href={"/contact"}>
+                                <a className="text-white text-lg">{t('contacts')}</a>
+                            </Link>
+                            
                         </nav>
                     </div>
                 </div>

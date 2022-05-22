@@ -1,14 +1,8 @@
-import mail from "../../images/mail.png"
-import linkedin from "../../images/linkedin.png"
-import facebook from "../../images/facebook.png"
-import telegram from "../../images/telegram.png"
-import instagram from "../../images/instagram.png"
-import twitter from "../../images/twitter.png"
+import axios from "axios"
 import Image from 'next/image'
 import { useTranslation } from "react-i18next"
-import { useContext, useState, useEffect } from "react"
 import { AuthContext } from "../../utils/authContext"
-import axios from "axios"
+import { useContext, useState, useEffect } from "react"
 
 function Footer() {
     const { t } = useTranslation();

@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import Link from "next/link";
-import Image from 'next/image'
-import LogoD from "../../images/logoL.png";
-import MobileMenu from './mabileMenu';
 import { t } from 'i18next';
+import Link from "next/link";
+import Image from 'next/image';
+import MobileMenu from './mabileMenu';
+import React, { useState } from 'react';
+import LogoD from "../../images/logoL.png";
 import { useTranslation } from 'react-i18next';
 
 
@@ -27,7 +27,6 @@ const Header = () => {
                             <NavLinks />
                         </div>
                         <div className="flex items-center text-white space-x-20">
-                            {/* <a href="tel:+998970001551" className="text-base text-white hidden md:inline-block">+998 (97) 000-15-51</a> */}
                             <a href="#contact" className="font-medium text-base text-white py-13 px-30 bg-buttonbg rounded-7px hidden md:block">{t('contact')}</a>
                             <button
                                 onClick={openMobileMenu}

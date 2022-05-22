@@ -1,10 +1,10 @@
 import axios from 'axios';
-import Link from "next/link"
-import React, { useState, useEffect, useContext } from 'react';
-import { AuthContext } from '../../utils/authContext';
-import ServicesCard from "../card/servicesCard";
+import Link from "next/link";
 import Arrow from "../layout/arrow";
 import { useTranslation } from "react-i18next";
+import ServicesCard from "../card/servicesCard";
+import { AuthContext } from '../../utils/authContext';
+import React, { useState, useEffect, useContext } from 'react';
 
 function Services() {
     const { t } = useTranslation();

@@ -4,7 +4,7 @@ import Mouse from "../../images/mouse.png";
 import playImg from "../../images/play.png";
 import { useTranslation } from "react-i18next";
 import mainImg from "../../images/mainImg.png";
-import styles from '../../styles/home.module.css';
+import styles from '../../styles/index.module.css';
 
 function MainSection() {
     const { t } = useTranslation();
