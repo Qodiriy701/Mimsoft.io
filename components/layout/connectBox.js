@@ -4,8 +4,8 @@ import { useRef } from 'react';
 import Image from "next/image";
 import { IMaskInput } from 'react-imask';
 import tick from "../../images/tick.png";
-// import 'react-phone-input-2/lib/style.css';
-// import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
+import PhoneInput from 'react-phone-input-2';
 import { useTranslation } from 'react-i18next';
 import { AuthContext } from "../../utils/authContext";
 import React, { useContext, useEffect, useState } from "react";
@@ -257,7 +257,7 @@ function ConnectBox() {
                         <div className="w-full overflow-hidden">
                             <div className="flex justify-center">
                                 <div className="block space-y-10 md:inline-flex items-center gap-26 md:gap-32 lg:gap-40 mb-20 md:mb-30 lg:mb-40">
-                                    <div id='tab1' className="inline-flex items-center gap-10 text-placeholderColor">
+                                    <div id='tab1' className="inline-flex items-center gap-10 text-placeholderColor mr-10">
                                         <button className="bg-buttonbg w-46 h-46 flex items-center justify-center shrink-0 text-white rounded-full">1</button>
                                         <span className="text-white text-base">{t('perInfor')}</span>
                                     </div>
@@ -277,7 +277,7 @@ function ConnectBox() {
                                         placeholder={t('phoneName')}
                                     />
 
-                                    <IMaskInput
+                                    {/* <IMaskInput
                                         id='phone'
                                         value={phone}
                                         mask='+{998} (00) 000 00 00'
@@ -288,18 +288,19 @@ function ConnectBox() {
                                         }
                                         placeholder={t('phoneNum')}
                                         className="text-base outline-none text-placeholderColor py-10 md:py-16 lg:py-20 border-b-2 bg-transparent border-placeholderColor w-full"
-                                    />
+                                    /> */}
 
-                                    {/* <PhoneInput
+                                    <PhoneInput
                                         id='phone'
                                         country={'us'}
                                         value={phone}
+                                        inputProps={{ required: true }}
                                         inputStyle={{ backgroundColor: 'transparent', width: '100%', color: 'white', paddingTop: '30px', paddingBottom: '30px', border: 'none', fontSize: '16px', boxShadow: 'none' }}
                                         buttonStyle={{ backgroundColor: 'transparent', border: 'none' }}
                                         containerStyle={{ borderBottom: '2px solid #999999' }}
                                         onChange={setPhone}
                                         placeholder={t('phoneNum')}
-                                    /> */}
+                                    />
 
                                     <input
                                         id="email" type="email"
