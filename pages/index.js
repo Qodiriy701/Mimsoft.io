@@ -11,6 +11,7 @@ import ConnectBox from '../components/layout/connectBox'
 import { useTranslation } from "react-i18next";
 import { t } from 'i18next'
 import QuestionBox from '../components/homeComponents/question'
+import styles from '../styles/home.module.css'
 
 export default function Home() {
   return (
