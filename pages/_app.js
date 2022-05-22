@@ -2,6 +2,7 @@ import '../i18n'
 import Head from 'next/head';
 import '../styles/index.css';
 import '../styles/globals.css';
+import Script from "next/script";
 import { useTranslation } from 'react-i18next'
 import AuthProvider from '../utils/authContext';
 
@@ -60,7 +61,6 @@ function MyApp({ Component, pageProps }) {
            "logo": "https://mimsoft.io/images/logo.png"
         `}
         </script>
-        <script src="https://unpkg.com/react-phone-input-2@2.x/dist/lib.js"></script>
         {/* <link rel="preconnect" href="https://fonts.googleapis.com" /> */}
         {/* <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> */}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -68,6 +68,10 @@ function MyApp({ Component, pageProps }) {
       <AuthProvider>
         <Component {...pageProps} />
       </AuthProvider>
+
+
+
+      <Script src="https://unpkg.com/react-phone-input-2@2.x/dist/lib.js"></Script>
     </>
   )
 }
