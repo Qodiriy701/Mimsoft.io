@@ -2,7 +2,6 @@ import '../i18n'
 import Head from 'next/head';
 import '../styles/index.css';
 import '../styles/globals.css';
-import Script from "next/script";
 import { useTranslation } from 'react-i18next'
 import AuthProvider from '../utils/authContext';
 
@@ -68,10 +67,6 @@ function MyApp({ Component, pageProps }) {
       <AuthProvider>
         <Component {...pageProps} />
       </AuthProvider>
-
-
-
-      <Script src="https://unpkg.com/react-phone-input-2@2.x/dist/lib.js"></Script>
     </>
   )
 }
