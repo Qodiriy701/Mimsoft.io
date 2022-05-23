@@ -15,7 +15,7 @@ function ServicesCard({ question, index }) {
     const { i18n } = useTranslation()
     const { BASE_IMG } = useContext(AuthContext);
     return (
-        <Link href={`/services?tab=${index}`}>
+        <Link href={`/services?tab=${question.slug}`}>
             <a
                 data-aos="fade-up"
                 data-aos-offset="100"

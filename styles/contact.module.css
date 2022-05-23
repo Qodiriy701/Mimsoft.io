@@ -11,6 +11,7 @@
     font-size: 24px;
     line-height: 25px;
     letter-spacing: 0.07em;
+    z-index: 5;
 }
 
 .tab button:focus {
@@ -19,6 +20,7 @@
 
 @media (max-width: 1024px) {
     .tab button {
+        z-index: 5;
         position: relative;
         bottom: -2px;
         cursor: pointer;
@@ -32,6 +34,7 @@
 
 @media (max-width: 768px) {
     .tab button {
+        z-index: 5;
         position: relative;
         bottom: -2px;
         cursor: pointer;

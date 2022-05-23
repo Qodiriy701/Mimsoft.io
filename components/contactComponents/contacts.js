@@ -7,13 +7,13 @@ import styles from '../../styles/contact.module.css';
 
 function Contacts() {
     const [active, setActive] = useState(false);
-    const [tab1, setTab1] = useState('');
-    const [tab2, setTab2] = useState('');
+    // const [tab1, setTab1] = useState('');
+    // const [tab2, setTab2] = useState('');
 
-    useEffect(() => {
-        setTab1(document.querySelector('#tab1'));
-        setTab2(document.querySelector('#tab2'));
-    }, [setTab1])
+    // useEffect(() => {
+    //     setTab1(document.querySelector('#tab1'));
+    //     setTab2(document.querySelector('#tab2'));
+    // }, [setTab1])
 
     function OpenCity(params) {
         if (params == 'uzb') {
