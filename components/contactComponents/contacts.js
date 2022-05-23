@@ -60,7 +60,11 @@ function Contacts() {
                                 <div>
                                     <p className='text-lg md:text-xl lg:text-xxl leading-9'>Address</p>
                                     <div className='text-sm md:text-base leading-7'>
-                                        {active ? <p>Ziyolilar ko'chasi 4G, Tashkent</p> : <p>9485 Main Ave Cincinnati, OH</p>}
+                                        {active ? 
+                                            <p>Ziyolilar ko`chasi 4G, Tashkent</p>
+                                            :
+                                            <p>9485 Main Ave Cincinnati, OH</p>
+                                        }
                                     </div>
                                 </div>
                             </div>
@@ -72,7 +76,11 @@ function Contacts() {
                                 <div>
                                     <p className='text-lg md:text-xl lg:text-xxl leading-9'>Phone number</p>
                                     <div className='text-sm md:text-base leading-7'>
-                                        {active ? <p>+998 97-000-1551</p> : <p>+1 415-797-3154</p>}
+                                        {active ? 
+                                            <p>+998 97-000-1551</p>
+                                            :
+                                            <p>+1 415-797-3154</p>
+                                        }
                                     </div>
                                 </div>
                             </div>
