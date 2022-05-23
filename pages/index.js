@@ -1,15 +1,17 @@
 import Head from 'next/head';
+import dynamic from 'next/dynamic';
 import 'remixicon/fonts/remixicon.css';
 import Layout from '../components/layout';
 import { useTranslation } from "react-i18next";
-import ConnectBox from '../components/layout/connectBox';
-import HomeMain from '../components/homeComponents/main';
-import PartnersBox from '../components/swiper/scrollBar';
-import MainAbout from '../components/homeComponents/about';
-import Services from '../components/homeComponents/services';
-import QuestionBox from '../components/homeComponents/question';
-import FeedbackBox from '../components/homeComponents/feedbacks';
-import MainPortfolio from '../components/homeComponents/portfolio';
+const ConnectBox = dynamic(() => import('../components/layout/connectBox'));
+const HomeMain = dynamic(() => import('../components/homeComponents/main'));
+const PartnersBox = dynamic(() => import('../components/swiper/scrollBar'));
+const MainAbout = dynamic(() => import('../components/homeComponents/about'));
+const Services = dynamic(() => import('../components/homeComponents/services'));
+const QuestionBox = dynamic(() => import('../components/homeComponents/question'));
+const FeedbackBox = dynamic(() => import('../components/homeComponents/feedbacks'));
+const MainPortfolio = dynamic(() => import('../components/homeComponents/portfolio'));
+
 // import { t } from 'i18next'
 // import styles from '../styles/index.module.css'
 
@@ -17,7 +19,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>mimsoft</title>
+        <title>Mimsoft - Custom Software, Mobile&Web App Development</title>
         <link rel="icon" href="/favicon.ico" />
 
         <meta property="type" content="website" />

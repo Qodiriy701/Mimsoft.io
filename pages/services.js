@@ -1,15 +1,19 @@
 import Image from 'next/image'
 import axios from "axios";
+import dynamic from 'next/dynamic';
 import React, { useContext, useEffect, useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { useTranslation } from "react-i18next";
 import Head from "next/head";
 import { AuthContext } from "../utils/authContext";
-import Header from "../components/layout/header";
-import HomeBox from "../components/layout/homeBox";
-import ConnectBox from "../components/layout/connectBox";
-import Footer from "../components/layout/footer";
-import MobileAppCard from "../components/card/mobileAppCard";
+const Header = dynamic(() => import("../components/layout/header"));
+const Footer = dynamic(() => import("../components/layout/footer"));
+const HomeBox = dynamic(() => import("../components/layout/homeBox"));
+const ConnectBox = dynamic(() => import("../components/layout/connectBox"));
+const MobileAppCard = dynamic(() => import("../components/card/mobileAppCard"));
+
+
+// const DynamicComponent = dynamic(() => import());
 
 function ServicesPage() {
     const { t, i18n } = useTranslation();
