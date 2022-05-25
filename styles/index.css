@@ -143,24 +143,13 @@
     background-size: cover;
 }
 
-.tabcontent {
-    display: none;
-    -webkit-animation: fadeEffect 0.37s;
-    animation: fadeEffect 0.37s;
-}
 
 .tabBorder {
     border-bottom: 2px solid blue;
 }
 
-@-webkit-keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
+.tabBorderNone {
+    border-bottom: 2px solid transparent;
 }
 
 

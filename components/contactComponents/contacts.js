@@ -7,23 +7,28 @@ import styles from '../../styles/contact.module.css';
 
 function Contacts() {
     const [active, setActive] = useState(false);
-    // const [tab1, setTab1] = useState('');
-    // const [tab2, setTab2] = useState('');
+    const [tab1, setTab1] = useState('');
+    const [tab2, setTab2] = useState('');
 
-    // useEffect(() => {
-    //     setTab1(document.querySelector('#tab1'));
-    //     setTab2(document.querySelector('#tab2'));
-    // }, [setTab1])
+    useEffect(() => {
+        setTab1(document.querySelector('#tab1'));
+        setTab2(document.querySelector('#tab2'));
+    }, [setTab1])
 
     function OpenCity(params) {
         if (params == 'uzb') {
             setActive(true);
-            tab1.classList.remove('border-blue');
-            tab1.classList.add('border-transparent');
-        } else {
+            tab1.classList.remove('tabBorder');
+            tab1.classList.add('tabBorderNone');
+            tab2.classList.add('tabBorder');
+            tab2.classList.remove('tabBorderNone');
+        } 
+        if (params == 'usa') {
             setActive(false)
-            tab1.classList.remove('border-blue');
-            tab1.classList.add('border-transparent');
+            tab1.classList.add('tabBorder');
+            tab1.classList.remove('tabBorderNone');
+            tab2.classList.remove('tabBorder');
+            tab2.classList.add('tabBorderNone');
         }
     }
 
@@ -46,8 +51,8 @@ function Contacts() {
                 <div className="inline-flex flex-col gap-80 p-20 md:p-30 lg:p-40 bg-bgblack md:absolute md:bottom-120">
                     <div className={styles.tab}>
                         <div className="inline-flex gap-40 border-b-2 border-bggray">
-                            <button id="tab1" onClick={() => OpenCity('usa')} className="border-b-2 border-blue">United States</button>
-                            <button id="tab2" onClick={() => OpenCity('uzb')} className="border-b-2 border-transparent">Uzbekistan</button>
+                            <button id="tab1" onClick={() => OpenCity('usa')} className="border-b-2 tabBorder">United States</button>
+                            <button id="tab2" onClick={() => OpenCity('uzb')} className="border-b-2 tabBorderNone">Uzbekistan</button>
                         </div>
                     </div>
 
@@ -87,8 +92,6 @@ function Contacts() {
                         </div>
                     </div>
 
-
-                    <div id="tab2Content" className='tabcontent text-white'></div>
                 </div>
             </div>
         </div>
