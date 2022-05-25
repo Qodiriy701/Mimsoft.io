@@ -18,9 +18,9 @@ function PortfolioCard({ question }) {
                     <Image src={img} layout="fill" objectFit="cover" objectPosition={"top"} alt="" />
                 </div>
                 <div className="absolute bottom-0 w-85%">
-                    <h2 className="font-medium text-xs md:text-sm py-6 md:py-8 lg:py-10 px-10 md:px-16 lg:px-20 inline-block rounded-t-7px text-white bg-buttonbg">{question.title[i18n.language]}</h2>
+                    <p className="font-medium text-xs md:text-sm py-6 md:py-8 lg:py-10 px-10 md:px-16 lg:px-20 inline-block rounded-t-7px text-white bg-buttonbg">{question.title[i18n.language]}</p>
                     <div className="bg-bgblack rounded-b-7px rounded-tr-7px text-white p-20 md:p-30 lg:p-40">
-                        <h2 className="font-semibold text-lg md:text-xl lg:text-xxl mb-10 text-white line-clamp-1">{question.name[i18n.language]}</h2>
+                        <p className="font-semibold text-lg md:text-xl lg:text-xxl mb-10 text-white line-clamp-1">{question.name[i18n.language]}</p>
                         <p className="text-sm md:text-base mb-30 md:mb-36 lg:mb-40 text-white line-clamp-4 md:line-clamp-3 lg:line-clamp-2 h-84 md:h-75 lg:h-50 overflow-hidden">{question.description[i18n.language]}</p>
                         <div className="inline-block" ><Arrow /></div>
                     </div>

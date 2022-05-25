@@ -22,7 +22,7 @@ function Contacts() {
             tab1.classList.add('tabBorderNone');
             tab2.classList.add('tabBorder');
             tab2.classList.remove('tabBorderNone');
-        } 
+        }
         if (params == 'usa') {
             setActive(false)
             tab1.classList.add('tabBorder');
@@ -38,13 +38,13 @@ function Contacts() {
                 <div className="md:pb-350">
                     {active ? 
                         <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.5877008039074!2d69.29998923785148!3d41.3178321540106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b7d761732dd%3A0x7b7e5180fa504771!2sIT%20Unity%20Academy!5e0!3m2!1sru!2s!4v1652113416420!5m2!1sru!2s" 
-                            className='w-full h-400 md:h-463 lg:h-500' loading="lazy" referrerPolicy="no-referrer-when-downgrade">
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1564.156952935377!2d69.3295807113147!3d41.33730779771465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b82b9216771%3A0xd19634d7a12e177a!2sMimsoft!5e1!3m2!1sru!2s!4v1653515203931!5m2!1sru!2s" 
+                            className='w-full h-400 md:h-463 lg:h-500' loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                         :
                         <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198678.89633864383!2d-87.87239081133158!3d41.83364743148599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2z0KfQuNC60LDQs9C-LCDQmNC70LvQuNC90L7QudGBLCDQodCo0JA!5e1!3m2!1sru!2s!4v1652114263453!5m2!1sru!2s" 
-                            className='w-full h-400 md:h-463 lg:h-500' loading="lazy" referrerPolicy="no-referrer-when-downgrade">
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3227.4809099834492!2d-84.3266618!3d39.2279997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8840545993fdba49%3A0xa89cdaf70e730d52!2zOTQ4NSBNYWluIEF2ZSwgQ2luY2lubmF0aSwgT0ggNDUyNDIsINCh0KjQkA!5e1!3m2!1sru!2s!4v1653515777862!5m2!1sru!2s" 
+                            className='w-full h-400 md:h-463 lg:h-500' loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     }
                 </div>
@@ -65,7 +65,7 @@ function Contacts() {
                                 <div>
                                     <p className='text-lg md:text-xl lg:text-xxl leading-9'>Address</p>
                                     <div className='text-sm md:text-base leading-7'>
-                                        {active ? 
+                                        {active ?
                                             <p>Ziyolilar ko`chasi 4G, Tashkent</p>
                                             :
                                             <p>9485 Main Ave Cincinnati, OH</p>
@@ -81,10 +81,10 @@ function Contacts() {
                                 <div>
                                     <p className='text-lg md:text-xl lg:text-xxl leading-9'>Phone number</p>
                                     <div className='text-sm md:text-base leading-7'>
-                                        {active ? 
+                                        {active ?
                                             <p>+998 97-000-1551</p>
                                             :
-                                            <p>+1 415-797-3154</p>
+                                            <p>+1 415-712-40-59</p>
                                         }
                                     </div>
                                 </div>

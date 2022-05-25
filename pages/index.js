@@ -25,9 +25,6 @@ export default function Home() {
         <meta name="type" content="website" />
         <meta name="og:type" content="website" />
 
-        <meta name="author" content="Mimsoft" />
-        <meta name="og:author" content="Mimsoft" />
-
         <meta name="site_name" content="mimsoft.io" />
         <meta name="og:site_name" content="mimsoft.io" />
 
@@ -36,6 +33,9 @@ export default function Home() {
 
         <meta name="image" content="%PUBLIC_URL%/logo192.png" />
         <meta name="og:image" content="%PUBLIC_URL%/logo192.png" />
+
+        <meta name="author" content="Mimsoft - Custom Software, Mobile&Web App Development" />
+        <meta name="og:author" content="Mimsoft - Custom Software, Mobile&Web App Development" />
 
         <meta name="title" content="Biznes muammolarga zamonaviy, qulay va kreativ yechimlar" />
         <meta name="og:title" content="Biznes muammolarga zamonaviy, qulay va kreativ yechimlar" />
