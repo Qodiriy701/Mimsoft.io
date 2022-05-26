@@ -374,7 +374,7 @@ function ConnectBox() {
 
 
 
-            <Script src="https://unpkg.com/react-phone-input-2@2.x/dist/lib.js"></Script>
+            <Script src="https://unpkg.com/react-phone-input-2@2.x/dist/lib.js" strategy="lazyOnload"/>
         </div>
     );
 }
