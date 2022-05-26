@@ -54,30 +54,33 @@ function ServicesPage() {
                 <title>Mimsoft</title>
                 <link rel="icon" href="/favicon.ico" />
 
-                <meta name="type" content="website"/>
-                <meta name="og:type" content="website"/>
+                <meta name="type" content="website" />
+                <meta name="og:type" content="website" />
 
-                <meta name="author" content="Mimsoft"/>
-                <meta name="og:author" content="Mimsoft"/>
+                <meta name="author" content="Mimsoft" />
+                <meta name="og:author" content="Mimsoft" />
 
-                <meta name="site_name" content="mimsoft.io"/>
-                <meta name="og:site_name" content="mimsoft.io"/>
+                <meta name="site_name" content="mimsoft.io" />
+                <meta name="og:site_name" content="mimsoft.io" />
 
                 <meta name="image" content="%PUBLIC_URL%/logo192.png" />
                 <meta name="og:image" content="%PUBLIC_URL%/logo192.png" />
 
-                <meta name="url" content="https://mimsoft.uz/services"/>
-                <meta name="og:url" content="https://mimsoft.uz/services"/>
+                <meta name="url" content="https://mimsoft.io/services" />
+                <meta name="og:url" content="https://mimsoft.io/services" />
 
-                <meta name="title" content="Biznes muammolarga zamonaviy, qulay va kreativ yechimlar"/>
-                <meta name="og:title" content="Biznes muammolarga zamonaviy, qulay va kreativ yechimlar"/>
+                <meta name="url" content="https://mimsoft.uz/services" />
+                <meta name="og:url" content="https://mimsoft.uz/services" />
 
-                <meta name="keywords" content="mimsoft, Mimsoft, mimsoft io, best it company, IT, IT company, IT kompaniya, tashkent it company,"/>
-                <meta name="og:keywords" content="mimsoft, Mimsoft, mimsoft io, best it company, IT, IT company, IT kompaniya, tashkent it company,"/>
+                <meta name="title" content="Biznes muammolarga zamonaviy, qulay va kreativ yechimlar" />
+                <meta name="og:title" content="Biznes muammolarga zamonaviy, qulay va kreativ yechimlar" />
 
-                <meta name="description" content="Mimsoft - biznes muammolarga zamonaviy, qulay va kreativ yechim taklif qila oladigan ko'ptarmoqli IT kompaniya"/>
-                <meta name="og:description" content="Mimsoft - biznes muammolarga zamonaviy, qulay va kreativ yechim taklif qila oladigan ko'ptarmoqli IT kompaniya"/>
-                
+                <meta name="keywords" content="mimsoft, Mimsoft, mimsoft io, best it company, IT, IT company, IT kompaniya, tashkent it company," />
+                <meta name="og:keywords" content="mimsoft, Mimsoft, mimsoft io, best it company, IT, IT company, IT kompaniya, tashkent it company," />
+
+                <meta name="description" content="Mimsoft - biznes muammolarga zamonaviy, qulay va kreativ yechim taklif qila oladigan ko'ptarmoqli IT kompaniya" />
+                <meta name="og:description" content="Mimsoft - biznes muammolarga zamonaviy, qulay va kreativ yechim taklif qila oladigan ko'ptarmoqli IT kompaniya" />
+
             </Head>
             <div className="flex flex-col min-h-screen">
                 <Header />

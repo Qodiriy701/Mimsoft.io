@@ -28,6 +28,9 @@ export default function Home() {
         <meta name="site_name" content="mimsoft.io" />
         <meta name="og:site_name" content="mimsoft.io" />
 
+        <meta name="url" content="https://mimsoft.uz" />
+        <meta name="og:url" content="https://mimsoft.uz" />
+
         <meta name="url" content="https://mimsoft.io" />
         <meta name="og:url" content="https://mimsoft.io" />
 

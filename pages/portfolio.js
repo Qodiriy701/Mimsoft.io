@@ -25,6 +25,9 @@ function Portfolio() {
                 <meta name="image" content="%PUBLIC_URL%/logo192.png" />
                 <meta name="og:image" content="%PUBLIC_URL%/logo192.png" />
 
+                <meta name="url" content="https://mimsoft.io/portfolio" />
+                <meta name="og:url" content="https://mimsoft.io/portfolio" />
+
                 <meta name="url" content="https://mimsoft.uz/portfolio" />
                 <meta name="og:url" content="https://mimsoft.uz/portfolio" />
 
