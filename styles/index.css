@@ -23,9 +23,18 @@
 }
 
 .accordion-button:not(),
+.accordion-button:active,
 .accordion-button:not(.collapsed) {
     background-color: #14161A !important;
     border: none;
+}
+
+.divBox {
+    background-color: #14161A !important;
+}
+
+.pBox {
+    background-color: #14161A !important;
 }
 
 .gaap-20 {
