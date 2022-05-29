@@ -5,13 +5,13 @@ function QuestionCard({ question, index }) {
     const { i18n } = useTranslation();
 
     return (
-        <div className="accordion-item bg-bgblack text-white Black">
-            <div className="accordion-header text-white" id={`flush-heading${index}`}>
-                <p className="accordion-button collapsed text-white text-xl font-medium" type="button" data-bs-toggle="collapse" data-bs-target={`#flush-collapse${index}`} aria-expanded="false" aria-controls={`flush-collapse${index}`}>
+        <div className="accordion-item bg-red text-white Black border-none">
+            <div  id={`flush-heading${index}`} className="accordion-header text-white bg-bgblack">
+                <p className="accordion-button collapsed text-white text-xl font-medium bg-bgblack border-none" type="button" data-bs-toggle="collapse" data-bs-target={`#flush-collapse${index}`} aria-expanded="false" aria-controls={`flush-collapse${index}`}>
                     {question.title[i18n.language]}
                 </p>
             </div>
-            <div id={`flush-collapse${index}`} className="accordion-collapse collapse" aria-labelledby={`flush-heading${index}`} data-bs-parent="#accordionFlushExample">
+            <div id={`flush-collapse${index}`} className="accordion-collapse collapse bg-bgblack border-none" aria-labelledby={`flush-heading${index}`} data-bs-parent="#accordionFlushExample">
                 <p className="accordion-body text-placeholderColor text-base" dangerouslySetInnerHTML={{ __html: question.body[i18n.language] }}></p>
             </div>
         </div>

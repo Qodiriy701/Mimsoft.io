@@ -15,6 +15,7 @@
     transition: transform .2s ease-in-out;
 }
 
+.accordion-button,
 .accordion-button:focus {
     outline: none;
     border: none;
@@ -22,6 +23,7 @@
 
 .accordion-button:not(.collapsed) {
     background-color: transparent;
+    border: none;
 }
 
 .gaap-20 {
