@@ -5,9 +5,9 @@ function QuestionCard({ question, index }) {
     const { i18n } = useTranslation();
 
     return (
-        <div className="accordion-item bg-red text-white Black border-none">
-            <div  id={`flush-heading${index}`} className="accordion-header text-white bg-bgblack">
-                <p className="accordion-button collapsed text-white text-xl font-medium bg-bgblack border-none" type="button" data-bs-toggle="collapse" data-bs-target={`#flush-collapse${index}`} aria-expanded="false" aria-controls={`flush-collapse${index}`}>
+        <div className="accordion-item bg-bgblack text-white Black border-none">
+            <div  id={`flush-heading${index}`} className="accordion-header text-white divBox">
+                <p className="accordion-button collapsed text-white text-xl font-medium pBox" type="button" data-bs-toggle="collapse" data-bs-target={`#flush-collapse${index}`} aria-expanded="false" aria-controls={`flush-collapse${index}`}>
                     {question.title[i18n.language]}
                 </p>
             </div>

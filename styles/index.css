@@ -19,10 +19,12 @@
 .accordion-button:focus {
     outline: none;
     border: none;
+    background-color: #14161A !important;
 }
 
+.accordion-button:not(),
 .accordion-button:not(.collapsed) {
-    background-color: transparent;
+    background-color: #14161A !important;
     border: none;
 }
 
