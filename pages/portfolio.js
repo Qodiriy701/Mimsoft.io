@@ -10,7 +10,7 @@ function Portfolio() {
     return (
         <div>
             <Head>
-                <title>Mimsoft</title>
+                <title>Mimsoft - Custom Software, Mobile&Web App Development</title>
                 <link rel="icon" href="/favicon.ico" />
 
                 <meta name="type" content="website" />
@@ -22,14 +22,11 @@ function Portfolio() {
                 <meta name="site_name" content="mimsoft.io" />
                 <meta name="og:site_name" content="mimsoft.io" />
 
+                <meta name="url" content="mimsoft.io/portfolio" />
+                <meta name="og:url" content="mimsoft.io/portfolio" />
+
                 <meta name="image" content="%PUBLIC_URL%/logo192.png" />
                 <meta name="og:image" content="%PUBLIC_URL%/logo192.png" />
-
-                <meta name="url" content="https://mimsoft.io/portfolio" />
-                <meta name="og:url" content="https://mimsoft.io/portfolio" />
-
-                <meta name="url" content="https://mimsoft.uz/portfolio" />
-                <meta name="og:url" content="https://mimsoft.uz/portfolio" />
 
                 <meta name="title" content="Biznes muammolarga zamonaviy, qulay va kreativ yechimlar" />
                 <meta name="og:title" content="Biznes muammolarga zamonaviy, qulay va kreativ yechimlar" />

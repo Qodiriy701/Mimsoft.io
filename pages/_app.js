@@ -60,8 +60,6 @@ function MyApp({ Component, pageProps }) {
            "logo": "https://mimsoft.io/images/logo.png"
         `}
         </script>
-        {/* <link rel="preconnect" href="https://fonts.googleapis.com" /> */}
-        {/* <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> */}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
       </Head>
       <AuthProvider>

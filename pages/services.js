@@ -34,6 +34,8 @@ function ServicesPage() {
             });
 
         const url = new URL(window.location)
+        console.log(url.href);
+        url.searchParams.get('blabla')
         const currentTab = url.searchParams.get('tab')
         if (currentTab) {
             setTabIndex(+currentTab)
@@ -45,13 +47,13 @@ function ServicesPage() {
         setTabIndex(index)
         const url = new URL(window.location)
         url.searchParams.set('tab', index)
-        window.history.pushState(null, document.title, url);
+        window.history.pushState(null, data.slug, url);
     }
 
     return (
         <div>
             <Head>
-                <title>Mimsoft</title>
+                <title>Mimsoft - Custom Software, Mobile&Web App Development</title>
                 <link rel="icon" href="/favicon.ico" />
 
                 <meta name="type" content="website" />
@@ -63,14 +65,11 @@ function ServicesPage() {
                 <meta name="site_name" content="mimsoft.io" />
                 <meta name="og:site_name" content="mimsoft.io" />
 
+                <meta name="url" content="mimsoft.io/services" />
+                <meta name="og:url" content="mimsoft.io/services" />
+
                 <meta name="image" content="%PUBLIC_URL%/logo192.png" />
                 <meta name="og:image" content="%PUBLIC_URL%/logo192.png" />
-
-                <meta name="url" content="https://mimsoft.io/services" />
-                <meta name="og:url" content="https://mimsoft.io/services" />
-
-                <meta name="url" content="https://mimsoft.uz/services" />
-                <meta name="og:url" content="https://mimsoft.uz/services" />
 
                 <meta name="title" content="Biznes muammolarga zamonaviy, qulay va kreativ yechimlar" />
                 <meta name="og:title" content="Biznes muammolarga zamonaviy, qulay va kreativ yechimlar" />

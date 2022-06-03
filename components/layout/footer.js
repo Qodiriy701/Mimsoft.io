@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { useTranslation } from "react-i18next"
 import { AuthContext } from "../../utils/authContext"
 import { useContext, useState, useEffect } from "react"
+import Script from "next/script"
 
 function Footer() {
     const { t } = useTranslation();
@@ -44,6 +45,16 @@ function Footer() {
                             })
                         }
                     </div>
+                </div>
+                <Script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></Script>
+                <div
+                    className="clutch-widget mt-20"
+                    data-nofollow="true"
+                    data-widget-type="1"
+                    data-darkbg="true"
+                    data-height="40"
+                    data-url="https://widget.clutch.co"
+                    data-clutchcompany-id="1950883">
                 </div>
             </div>
         </div>

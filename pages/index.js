@@ -25,14 +25,11 @@ export default function Home() {
         <meta name="type" content="website" />
         <meta name="og:type" content="website" />
 
+        <meta name="url" content="mimsoft.io" />
+        <meta name="og:url" content="mimsoft.io" />
+
         <meta name="site_name" content="mimsoft.io" />
         <meta name="og:site_name" content="mimsoft.io" />
-
-        <meta name="url" content="https://mimsoft.uz" />
-        <meta name="og:url" content="https://mimsoft.uz" />
-
-        <meta name="url" content="https://mimsoft.io" />
-        <meta name="og:url" content="https://mimsoft.io" />
 
         <meta name="image" content="%PUBLIC_URL%/logo192.png" />
         <meta name="og:image" content="%PUBLIC_URL%/logo192.png" />
@@ -48,10 +45,7 @@ export default function Home() {
 
         <meta name="description" content="Mimsoft - biznes muammolarga zamonaviy, qulay va kreativ yechim taklif qila oladigan ko'ptarmoqli IT kompaniya" />
         <meta name="og:description" content="Mimsoft - biznes muammolarga zamonaviy, qulay va kreativ yechim taklif qila oladigan ko'ptarmoqli IT kompaniya" />
-
-        {/* <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" /> */}
-        {/* <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> */}
-        {/* <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" /> */}
+        
       </Head>
 
       <Layout>
