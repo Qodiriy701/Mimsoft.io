@@ -34,8 +34,6 @@ function ServicesPage() {
             });
 
         const url = new URL(window.location)
-        console.log(url.href);
-        url.searchParams.get('blabla')
         const currentTab = url.searchParams.get('tab')
         if (currentTab) {
             setTabIndex(+currentTab)
@@ -47,7 +45,8 @@ function ServicesPage() {
         setTabIndex(index)
         const url = new URL(window.location)
         url.searchParams.set('tab', index)
-        window.history.pushState(null, data.slug, url);
+        console.log(url.href);
+        window.history.pushState(null, document.title, url);
     }
 
     return (

@@ -29,12 +29,24 @@ function Footer() {
     return (
         <div className="py-40 bg-bgblack">
             <div className="container">
-                <div className="gap-x-20 gap-y-40 grid md:grid-cols-2 items-center">
+                <div className="gap-x-20 gap-y-40 grid md:grid-cols-2 lg:grid-cols-3 items-center">
                     <div className="flex flex-col gap-10 w-full">
                         <p onClick={clickTop} className="text-xl text-white wolkway cursor-pointer">mimsoft</p>
                         <p className="text-sm w-full text-placeholderColor">{t('copyRight')}</p>
                     </div>
-                    <div className="flex justify-start md:justify-end gap-20">
+                    <div className="inline-flex md:justify-center">
+                        <Script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></Script>
+                        <div
+                            className="clutch-widget"
+                            data-nofollow="true"
+                            data-widget-type="1"
+                            data-darkbg="true"
+                            data-height="40"
+                            data-url="https://widget.clutch.co"
+                            data-clutchcompany-id="1950883">
+                        </div>
+                    </div>
+                    <div className="flex justify-start lg:justify-end gap-20">
                         {data.length > 0 &&
                             data.map((question) => {
                                 return (
@@ -45,16 +57,6 @@ function Footer() {
                             })
                         }
                     </div>
-                </div>
-                <Script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></Script>
-                <div
-                    className="clutch-widget mt-20"
-                    data-nofollow="true"
-                    data-widget-type="1"
-                    data-darkbg="true"
-                    data-height="40"
-                    data-url="https://widget.clutch.co"
-                    data-clutchcompany-id="1950883">
                 </div>
             </div>
         </div>
