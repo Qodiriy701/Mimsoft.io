@@ -31,7 +31,7 @@ function Footer() {
             <div className="container">
                 <div className="gap-x-20 gap-y-40 grid md:grid-cols-2 lg:grid-cols-3 items-center">
                     <div className="flex flex-col gap-10 w-full">
-                        <p onClick={clickTop} className="text-xl text-white wolkway cursor-pointer">mimsoft</p>
+                        <div><p onClick={clickTop} className="text-xl text-white wolkway cursor-pointer inline">mimsoft</p></div>
                         <p className="text-sm w-full text-placeholderColor">{t('copyRight')}</p>
                     </div>
                     <div className="inline-flex md:justify-center">
