@@ -39,15 +39,27 @@ function ServicesPage() {
             setTabIndex(+currentTab)
         }
 
+        // const url = new URL(window.location)
+        // const currentTab = url.searchParams.get('tab')
+        // if (currentTab) {
+        //     setTabIndex(+currentTab)
+        // }
+
     }, [BASE_URL]);
 
     const onChangeClick = (index) => {
         setTabIndex(index)
         const url = new URL(window.location)
         url.searchParams.set('tab', index)
-        console.log(url.href);
         window.history.pushState(null, document.title, url);
     }
+
+    // const onChangeClick = (index) => {
+    //     setTabIndex(index)
+    //     const url = new URL(window.location)
+    //     url.searchParams.set('tab', index)
+    //     window.history.pushState(null, document.title, url);
+    // }
 
     return (
         <div>
@@ -88,6 +100,7 @@ function ServicesPage() {
                         <div className="container">
                             {data.length ?
                                 <Tabs className="flex flex-col md:flex-row gap-y-30" selectedIndex={data.slug} onSelect={index => onChangeClick(data[index].slug)}>
+                                     {/* <Tabs className="flex flex-col md:flex-row gap-y-30" selectedIndex={tabIndex} onSelect={index => onChangeClick(index)}></Tabs> */}
                                     <TabList className="w-full md:w-270 flex flex-col md:shrink-0">
                                         {
                                             data.map((question) => {
